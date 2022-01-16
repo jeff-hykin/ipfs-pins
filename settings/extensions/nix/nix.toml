@@ -52,11 +52,11 @@
 
 [[packages]]
 load = [ "zellij",]
-from = "860b56be91fb874d48e23a950815969a7b832fbc"
+# from = "860b56be91fb874d48e23a950815969a7b832fbc"
 
 [[packages]]
 load = [ "ipfs", ]
-from = "860b56be91fb874d48e23a950815969a7b832fbc"
+# from = "860b56be91fb874d48e23a950815969a7b832fbc"
 
 # 
 # Linux
@@ -165,7 +165,7 @@ load = [ "tealdeer",]
 
 [[packages]]
 load = [ "ytop",]
-from = "a332da8588aeea4feb9359d23f58d95520899e3c"
+# from = "a332da8588aeea4feb9359d23f58d95520899e3c"
 
 [[packages]]
 load = [ "exa",]
