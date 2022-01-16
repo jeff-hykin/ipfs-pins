@@ -4,7 +4,7 @@
 # (but the existing vars can be changed, and you can add custom logic with settings/extensions/YOUR_THING/#establish_extension.sh)
 
 # change the "false" to "true" to see how everything works!
-export FORNIX_DEBUG="false"
+export FORNIX_DEBUG="true"
 
 #
 # helper function
