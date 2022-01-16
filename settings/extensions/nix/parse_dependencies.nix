@@ -235,7 +235,8 @@
                 buildInputs = buildInputs;
                 nativeBuildInputs = nativeBuildInputs;
                 protectHomeShellCode = ''
-                    echo "$PWD"
+                    #FIXME its possible for this path to be escaped incorrectly
+                    export PWD='${(main.getEnv "__FORNIX_NIX_SETTINGS_PATH")}'
                     # 
                     # find the fornix_core
                     # 
