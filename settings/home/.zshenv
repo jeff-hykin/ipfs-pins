@@ -48,6 +48,6 @@ then
 fi
 
 # run the automatic non-zsh-specific setup
-. "$FORNIX_FOLDER/settings/extensions/#standard/commands/tools/fornix/trigger" "$FORNIX_FOLDER/settings/during_start"
+# . "$FORNIX_FOLDER/settings/extensions/#standard/commands/tools/fornix/trigger" "$FORNIX_FOLDER/settings/during_start"
 
 echo "finished .zshenv"
