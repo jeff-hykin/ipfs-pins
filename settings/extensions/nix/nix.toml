@@ -50,6 +50,14 @@
 # and if you need them for one project nix has a shared-memory across projects
 # comment these out in a situation such as deploying a project to a minimal server
 
+[[packages]]
+load = [ "zellij",]
+from = "860b56be91fb874d48e23a950815969a7b832fbc"
+
+[[packages]]
+load = [ "ipfs", ]
+from = "860b56be91fb874d48e23a950815969a7b832fbc"
+
 # 
 # Linux
 # 
