@@ -235,6 +235,7 @@
                 buildInputs = buildInputs;
                 nativeBuildInputs = nativeBuildInputs;
                 protectHomeShellCode = ''
+                    echo "$PWD"
                     # 
                     # find the fornix_core
                     # 
