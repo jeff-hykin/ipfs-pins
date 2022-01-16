@@ -3,6 +3,7 @@
 
 # get passed pwd cause its no longer preserved
 export PWD="$1"
+shift
 
 # the comments above^ are special
 #   they tell the system to process this using nix-shell
@@ -87,9 +88,9 @@ if [[ -n "$FORNIX_ARGS" ]]
 then
     # FIXME: I think the single quotes need to be escaped from the arguments (need to iterate over them, escape each one with single quotes)
     # run single command
+    echo '__temp_var__nix_shell_file: '"$__temp_var__nix_shell_file"
     HOME="$FORNIX_HOME" nix-shell --pure --run "zsh -c '$FORNIX_ARGS'" "$__temp_var__nix_shell_file"
 else
-    echo '__temp_var__nix_shell_file: '"$__temp_var__nix_shell_file"
     HOME="$FORNIX_HOME" nix-shell --pure --command "zsh" "$__temp_var__nix_shell_file"
 fi
 if [ "$FORNIX_DEBUG" = "true" ]; then
